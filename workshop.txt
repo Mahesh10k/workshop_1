@@ -1,0 +1,227 @@
+Stage 1:
+
+1. What is Difference between Div and Span tag ?
+
+  Div :
+--> Div is Division tag and it is used to Wrap or grouping the different elements in a Webpage.
+--> It is Block Level tag.
+--> Syntax :
+    <div>
+        <h1>Mahesh</h1>
+        <p> hi how are you all</p>
+    </div>
+
+    Span:
+--> Span tag is used to Style the particular element in a Webpage.
+--> It is Inline level tag.
+--> Syntax:
+    <h1>This is span <span>tag</span></h1>
+
+2. What are the Sementic elements in html ?
+--> Sementic elements clearly describes meaning to the both browser and developer.
+--> it clearly describes its content.
+--> these are used to enhance the quality of the code.
+--> Examples for Sementic elements are 
+    1. header
+    2. footer
+    3. aside
+    4. nav
+    5. section
+    
+3. What is Difference between href and src attributes ?
+
+    href :
+--> href means hyper reference.
+--> href is an attribute is used to defines the location of an external link or url such as Webpage.
+--> this attribute is used in anchor tag.
+--> Syntax :
+    <a href=""></a>
+    
+    src:
+--> src means source
+--> src is an attribute is used to defines the source of embedded resource, such as image or multimedia.
+--> this attribute is used in image tag.
+--> We can't give the webpage url to src attribute.
+--> syntax:
+    <img src="" alt="">
+
+4. What is Difference between xml and html ?
+
+   html :
+--> html is Hypertext Markup Language.
+--> HTML is a combination of Hypertext and Markup language. Hypertext defines the link between the web pages. 
+--> A markup language is used to define the text document within the tag which defines the structure of web pages.
+--> By HTML we can create and deploy our static page. 
+--> It is used for displaying the data not to transport the data.
+--> html is not a case sensitive
+--> Syntax:
+
+    <html>
+    <head>
+
+    </head>
+    <body>
+
+    <body>
+    </html>
+
+    xml:
+--> xml is Extensible markup language.
+--> xml is also used to create and deploy a webpage. 
+--> It allows users to define their custom tags, making it highly flexible.
+--> xml is a versatile markup language designed for carrying and storing data.
+--> syntax:
+  
+    <xml>
+    <form> 
+        <name> </name>
+        <rollno> </rollno>
+    </form>
+
+5. What are list tags and how many are they ?
+ --> list tags are used to order the elements or items.
+ --> list tags are represented with <li> in html.
+ --> there are three types of list tags in html. they are 
+        1. Ordered list
+        2. Unordered list
+        3. Description list
+    
+       Ordered list:
+    --> Ordered list is used to order the elements in number or alphabetical or roman numbers way.
+    --> in which, the items are marked with numbers or alphabets by providing type attribute.
+    --> it is represented with <ol> tag in html.
+    --> syntax: 
+       
+        <ol type="1">
+            <li>raju</li>
+            <li>Mahesh</li>
+        </ol>
+
+        output:
+        1. raju
+        2. Mahesh
+
+        Unordered list :
+    --> unordered list is also used to order the elements.
+    --> in which, the items are marked with bullet points or dots.
+    --> it is represented with <ul> tag in html.
+    --> Syntax:
+
+        <ul>
+            <li>raju</li>
+            <li>Mahesh</li>
+        </ul>
+
+        output:
+        . raju
+        . Mahesh 
+
+        Description list:
+    --> Description list is represnted with <dl> tag in html.
+    --> The Description list tag is used in conjunction with <dt> defines description terms and <dd> describes description data.
+    --> Syntax:
+        
+        <dl>
+           <dt>car</dt>
+              <dd>Buggati</dd>
+              <dd>marcedes</dd>
+        </dl>
+
+        output:
+        cars
+            Buggati
+            marcedes
+
+
+6. Create a iframe where a single iframe can opens multiple links in it ?
+
+--> Iframe is a tag in html is used to import the external video or website directly to the webpage.
+--> Syntax:
+    <iframe src="" frameborder="" name=""> </iframe>
+
+--> single iframe can opens multiple links in it...
+     <a href="https://i.pinimg.com/736x/ec/81/ee/ec81eec16845483962045736d29da3c2.jpg" target="iframe">Image</a>
+    
+    <a href="https://www.youtube.com/embed/73_1biulkYk?si=NSXFubcMs8EOtlB4" target="iframe">Trailer</a>
+    
+    <iframe src="" frameborder="1" name="iframe" height="600" width="600" scrolling="yes"></iframe> 
+
+7. Create a Register form using name, email, age, Privacy policies and submit and do validations ?
+
+--> <form>
+        <fieldset>
+            <legend>Register Form</legend>
+            <input type="text" placeholder="Name"> <br>
+            <input type="email" placeholder="Email"> <br>
+            <input type="number" placeholder="Age"> <br>
+            <input type="checkbox">
+            Accept <a>privacy<a> and <a>policies</a>
+            <input type="button" value="submit">
+        </fieldset>
+    </form>
+
+
+
+
+    Stage 2:
+
+1. What is command for connecting local repo and github repo ?
+--> git remote add origin <repo url>
+
+2. git command to change the directory of local folder ?
+--> cd <folder name>
+
+3. git command to check the commits of the project ?
+--> git log
+     (or)
+--> git log --oneline
+
+4. git command for pushing all the code to ravi branch ?
+--> git init
+--> git add .
+--> git commit -m "added all files"
+--> git remote add origin <repo url>
+--> git branch -M ravi
+--> git push origin ravi
+
+5. Difference between push and pull commands in git ?
+--> push command is used to push the code or changes in the code from local folder to remote repository.
+
+--> pull command is used to pull the changes of the code from remote repository to local folder.
+
+6. Command to check the no. of branches and command to switch the branch ?
+--> command to check the no. of branches..
+    git branch
+
+--> command to switch the branch..
+    git checkout <branch name>
+
+7. What are stages of our project to reach to github repo ?
+--> git init
+--> git add .
+--> git commit -m "message"
+--> git remote add origin "repo url"
+--> git branch -M <branch name>
+--> git push origin <branch name>
+
+8. what are the commands which we use in staging area ?
+--> to stage all files..
+    git add .
+
+--> to stage single file..
+    git add <file name>
+
+--> to delete the file in local folder..
+   git rm <file name>
+
+--> to restore the deleted file in local folder..
+    git restore <file name>
+
+--> to show the status of the code..
+    git status
+
+--> to compare the two versions of a file..
+    git diff 
+
+--> to commit the changes..
+    git commit -m "message"
